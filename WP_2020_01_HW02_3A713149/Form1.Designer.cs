@@ -48,7 +48,6 @@
             // 
             // pbshow
             // 
-            this.pbshow.Image = global::WP_2020_01_HW02_3A713149.Properties.Resources.p4;
             this.pbshow.Location = new System.Drawing.Point(446, 238);
             this.pbshow.Name = "pbshow";
             this.pbshow.Size = new System.Drawing.Size(173, 160);
