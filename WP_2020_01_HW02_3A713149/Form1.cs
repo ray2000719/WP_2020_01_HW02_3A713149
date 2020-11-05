@@ -18,8 +18,7 @@ namespace WP_2020_01_HW02_3A713149
     {
 
         List<Image> pokerpicture = new List<Image>();
-        poker s = new poker();
-        List<int> poker = s.GetPoker(52);
+
 
         public frmGame()
         {
@@ -88,7 +87,7 @@ namespace WP_2020_01_HW02_3A713149
                 pokerpicture.Add(Resources.p52);
 
                 
-
+                
             }
         }
 
@@ -102,14 +101,16 @@ namespace WP_2020_01_HW02_3A713149
         int i = 1;
         private void btnPump_Click(object sender, EventArgs e)
         {
+            poker s = new poker();
+            List<int> poker = s.GetPoker(52);
 
             if (i<52)
             {
                 
 
 
-                pbshow.Image = pokerpicture[poker[i]];
-                rtbshow.Text += poker[i]+1 + ",";
+                pbshow.Image = pokerpicture[poker[1]];
+                rtbshow.Text = poker[1]+1 + ",";
                 i =  i + 1;
                 
             }
